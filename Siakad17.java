@@ -1,3 +1,4 @@
+import java.nio.channels.Pipe.SourceChannel;
 import java.util.Scanner;
 
 /**
@@ -31,7 +32,8 @@ public class Siakad17 {
 
         nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian) / 3;
 
-        System.out.println("Mahasiswa dengan nama  " + nama + "  (NIM " +  nim + ")" + " kelas " + kelas + " nomor absen "  + absen);
+        System.out.println("Nama:  " + nama + " NIM: " +  nim);
+        System.out.println("Kelas: " + kelas + " Absen: " + absen);
         System.out.println("Nilai Akhir: " + nilaiAkhir);
 
     }
