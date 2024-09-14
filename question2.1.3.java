@@ -12,8 +12,8 @@ public class bgcghg {
         int jumlahKopi;
         int jumlahTeh;
         int jumlahRoti;
-        double hargaKopi = 12000, hargaTeh = 7000, hargaRoti = 20000;
-        float diskon = 10 / 100f;
+        double hargaKopi = 12000.0, hargaTeh = 7000.0, hargaRoti = 20000.0;
+        float diskon = 10 / 100;
         double totalHarga;
         double nominalBayar;
 

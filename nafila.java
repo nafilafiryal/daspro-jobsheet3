@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * bgcghg
  */
-public class bgcghg {
+public class nafila {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class bgcghg {
         int jumlahKopi;
         int jumlahTeh;
         int jumlahRoti;
-        double hargaKopi = 12000, hargaTeh = 7000, hargaRoti = 20000;
+        double hargaKopi = 12000.0, hargaTeh = 7000.0, hargaRoti = 20000.0;
         float diskon = 10 / 100f;
         double totalHarga;
         double nominalBayar;
@@ -26,13 +26,20 @@ public class bgcghg {
         System.out.print("Masukkan jumlah pembelian roti: ");
         jumlahRoti = input.nextInt();
 
+
         totalHarga = (jumlahKopi * hargaKopi) + (jumlahTeh * hargaTeh) + (jumlahRoti * hargaRoti);
 
         nominalBayar = totalHarga - (diskon * totalHarga);
 
+        int nominallnt = (int) nominalBayar;
+        byte totalByte = (byte) totalHarga;
+
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jumlahKopi + " kopi," + " " +  jumlahTeh + " teh," + " " + jumlahRoti + " roti");
-        System.out.println("Nominal bayar Rp " + nominalBayar);
+        System.out.println("Nominal bayar (double) Rp " + nominalBayar);
+        System.out.println("Nominal bayar (int): " + nominallnt);
+        System.out.println("Total harga as byte: " + totalByte);
+        System.out.println("Total harga : " + totalHarga);
         
     }
 }
