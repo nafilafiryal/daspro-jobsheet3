@@ -33,7 +33,6 @@ public class bgcghg {
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jumlahKopi + " kopi," + " " +  jumlahTeh + " teh," + " " + jumlahRoti + " roti");
         System.out.println("Nominal bayar Rp " + nominalBayar);
-        System.out.println("halo halo");
         
     }
 }
